@@ -1,0 +1,46 @@
+body{
+    font-family: Poppins;
+}
+.container-md a{
+    transition: .5s;
+}
+header nav{
+    background-image: url(../Imagens/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 11vh;
+    background-position: 20px 15px;
+}
+.container-md a:hover{
+    color: #f3f3f3;
+}
+.main-title {
+    margin: 15px 0 0 0;
+    position: relative;
+}
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 42.5%;
+  }
+.about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+main .filtros button{
+    margin: 0 0 5px 10px;
+}
+.table{
+    border: 2px solid #000;
+    margin: 0 10px 5px 10px;
+    width: 98%;
+}
+.table th{
+    background-color: #f3f3f3;
+    border: 1px solid #000;
+    padding: 5px;
+}
