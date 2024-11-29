@@ -42,3 +42,12 @@ if ($action == 'salvar') { //Se a ação for salvar, pega os valores do formulá
         header("Location: ../index.php");
     }
 }
+if (isset($_POST['action']) && $_POST['action']== 'excluir' && isset($_POST['id'])){
+    $sqlDelete = "DELETE FROM informacoes_consultas WHERE id = ?";
+    $excluir = $conexao->prepare($sqlDelete);
+    $excluir->bindParam(1, $_POST['id'], PDO::PARAM_INT);
+
+    if($excluir->execute()){
+        echo 'Registro excluido com sucesso';
+    }
+}
